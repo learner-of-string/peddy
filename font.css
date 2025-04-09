@@ -12,8 +12,19 @@
   color: #131313;
 }
 
+.text-secondary {
+  color: #131313b3;
+}
+
 .btn-primary {
   background: #0e7a81;
+  border: 0;
+  outline: 0;
+}
+
+.btn-secondary {
+  background: #0e7a8126;
+  color: #0e7a81;
   border: 0;
   outline: 0;
 }

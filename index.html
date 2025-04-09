@@ -45,8 +45,8 @@
               </ul>
             </div>
             <a class="btn btn-ghost text-xl">
-              <img src="./assets/images/logo.webp" alt="" />
-              Peddy
+              <img src="./assets/images/logo.webp" alt="peddy" />
+              <p class="text-3xl">Peddy</p>
             </a>
           </div>
           <div class="navbar-center hidden lg:flex">
@@ -99,7 +99,7 @@
             <h3 class="font-black text-4xl text-primary">
               Adopt Your Best Friend
             </h3>
-            <p class="text-[#131313B3] w-2xl mx-auto my-5">
+            <p class="text-secondary w-2xl mx-auto my-5">
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout. The
               point of using Lorem Ipsum is that it has a.
@@ -109,14 +109,79 @@
         <section id="category-list-container">
           <div id="category-list" class="flex justify-around"></div>
         </section>
-        <section id="best-deal-section" class="mx-[140px] my-8">
+        <section id="best-deal-section" class="mx-[75px] my-8">
           <div id="best-deal-header" class="flex justify-between items-center">
             <h4 class="text-2xl font-black">Best Deal For You</h4>
             <button class="btn btn-primary">Sort by price</button>
           </div>
-          <div id="pet-list-container"></div>
+          <div id="pet-list-container" class="my-7">
+            <div id="pets" class="flex gap-3 flex-wrap"></div>
+          </div>
         </section>
       </main>
+      <footer
+        class="footer py-[100px] px-[140px] bg-[#131313] sm:footer-horizontal bg-neutral text-neutral-content p-10"
+      >
+        <nav>
+          <div class="flex gap-2 items-center">
+            <img
+              src="./assets/images/logo.webp"
+              alt="peddy"
+              class="object-cover w-5 h-5"
+            />
+            <p class="font-black text-3xl">Peddy</p>
+          </div>
+          <div class="flex flex-col gap-2">
+            <p>Location: av. Washington 165, NY CA 54003</p>
+            <p>Phone: +31 85 964 47 25</p>
+            <p>Email: info@yourdomain.com</p>
+            <p>Openings hours: 9.00 AM - 5.00 PM</p>
+          </div>
+          <div class="flex gap-3">
+            <img
+              src="https://img.icons8.com/?size=100&id=uLWV5A9vXIPu&format=png&color=000000"
+              alt="fb icon"
+              class="object-cover w-7 h-7"
+            />
+            <img
+              src="https://img.icons8.com/?size=100&id=YfCbGWCWcuar&format=png&color=FFFFFF"
+              alt="x icon"
+              class="object-cover w-7 h-7"
+            />
+            <img
+              src="https://img.icons8.com/?size=100&id=9a46bTk3awwI&format=png&color=000000"
+              alt="yt icon"
+              class="object-cover w-7 h-7"
+            />
+            <img
+              src="https://img.icons8.com/?size=100&id=BrU2BBoRXiWq&format=png&color=000000"
+              alt="yt icon"
+              class="object-cover w-7 h-7"
+            />
+          </div>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Useful Links</h6>
+          <a class="link link-hover">Home</a>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Animals</a>
+          <a class="link link-hover">Foundation</a>
+          <a class="link link-hover">Contact</a>
+        </nav>
+        <form>
+          <h6 class="footer-title text-[#FFFFFFE6]">Drop a Message</h6>
+          <fieldset class="w-3xs flex flex-col gap-2">
+            <div class="join">
+              <input
+                type="text"
+                placeholder="Enter your email"
+                class="input input-bordered bg-[#FFFFFF0D]"
+              />
+            </div>
+            <button class="btn btn-primary">Subscribe</button>
+          </fieldset>
+        </form>
+      </footer>
     </div>
   </body>
 </html>
