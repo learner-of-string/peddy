@@ -3,7 +3,7 @@ const displayCategories = (categoryList) => {
 
   categoryList.forEach((eachCategoryObj) => {
     const categoryBtn = document.createElement("button");
-    categoryBtn.classList =
+    categoryBtn.className =
       "btn p-10 btn-outline-primary font-inter text-2xl font-bold";
     categoryBtn.innerHTML = `<img src="${eachCategoryObj.category_icon}" class="mr-4" alt="${eachCategoryObj.category} icon"><p>${eachCategoryObj.category}</p>`;
     categoryContainer.appendChild(categoryBtn);
@@ -14,9 +14,12 @@ const displayAllPets = (pets) => {
   const petsContainer = document.getElementById("pets");
 
   pets.forEach((eachPetObj) => {
-    console.log(eachPetObj);
+    let { image, pet_name, breed, date_of_birth, price } = eachPetObj;
 
-    const { image, pet_name, breed, date_of_birth, price } = eachPetObj;
+    pet_name = pet_name ?? "IDK";
+    breed = breed ?? "IDK";
+    date_of_birth = date_of_birth ?? "Not Available";
+    price = price ?? "0";
 
     const petCard = document.createElement("div");
     // petCard.classList.add("w-1/3");
@@ -82,5 +85,3 @@ const displayAllPets = (pets) => {
     .then((data) => displayAllPets(data.pets))
     .catch((error) => console.log(error));
 })();
-
-const petList = ``;
